@@ -1,0 +1,70 @@
+
+
+
+
+/* Barra lateral fija a la izquierda */
+.navbar-fixed-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px; /* Ajuste de ancho para iconos */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333; /* Fondo oscuro para la barra */
+    padding-top: 15px;
+    z-index: 1030;
+}
+/* Estilos img Navegación */
+.navbar-brand img {
+    width: 130%;
+}
+
+/* Estilos de los iconos de navegación */
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Elementos de la lista alineados al centro */
+.navbar-nav li {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; /* Espaciado entre iconos */
+}
+
+.navbar-nav li a {
+    display: block;
+    color: #ddd;
+    font-size: 24px;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+/* Color al pasar el mouse */
+.navbar-nav li a:hover {
+    color: #fff;
+}
+
+.navbar-nav .active a {
+    color: #fff; /* Color para el enlace activo */
+}
+
+/* Iconos Font Awesome */
+.navbar-nav .fa {
+    color: #f1f0f0;
+    font-size: 24px;
+    margin-right: 0; /* Eliminado el margen derecho para centrar iconos */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto hover para todos los iconos */
+.navbar-nav .fa:hover {
+    color: #fff;
+    transform: scale(1.2); /* Aumenta el tamaño ligeramente */
+}

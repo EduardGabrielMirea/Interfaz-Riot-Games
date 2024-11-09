@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/public/img/Logo-puno.ico" type="image/x-icon">
+    <title>Riot Games</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="/public/css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="/public/css/prueba.css" rel="stylesheet">
+
+    <!-- Otros enlaces y configuraciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- JQuery para cargar los partials -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Custom JS -->
+    <script src="/public/js/script.js"></script>
+</head>
+<body>
+    <!-- Start Navigation Bar -->
+    <div id="index"></div>
+    <!-- End Navigation Bar -->
+
+    <!-- Start Main Content -->
+    <main class="right-column">
+        <!-- Start Carousel -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <h2>Novedades</h2>
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <!-- Video de YouTube en lugar de la primera imagen -->
+                    <iframe class="first-slide" src="https://www.youtube.com/embed/rhTZTy1rZhw" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="item">
+                    <!-- Video de YouTube en lugar de la segunda imagen -->
+                    <iframe class="second-slide" src="https://www.youtube.com/embed/3dAb0HADFYU" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>     
+                </div>
+                <div class="item">
+                    <!-- Video de YouTube en lugar de la segunda imagen -->
+                    <iframe class="second-slide" src="https://www.youtube.com/embed/J_TQK480XDk" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>                    
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- End Carousel -->
+        
+        <!-- Start Promotion Content -->
+        <div class="content-list">
+            <h2>Promociones</h2>
+            <div class="cart-list">
+                <div class="cart">
+                    <div class="cart-header">
+                        <img src="/public/img/promocion1.jpg" alt="promotion">
+                    </div>
+                    <div class="cart-content">
+                        <h3>Sácale más partido a los títulos de Riot games con Xbox Game Pass.</h3>
+                        <p>Riot Games se une a Xbox para llevar nuestros títulos más importantes a Game Pass. Los miembros de Game Pass pueden vincular sus perfiles de Xbox para desbloquear recompensas prémium y beneficios exclusivos.</p>
+                        <div class="cart-content-buttons">
+                            <button class="primary-button">Vincular mi perfil de Xbox</button>
+                            <button>Más información</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="cart">
+                    <div class="cart-header">
+                        <img src="/public/img/promocion-riot-mobile.jpg" alt="promotion">
+                    </div>
+                    <div class="cart-content">
+                        <h3>Riot Mobile</h3>
+                        <p>Riot Mobile ayuda a que los jugadores descubran nuevo contenido, se mantengan informados a cerda de todos nuestros títulos y eventos, y pueden conectar con otros jugadores de Riot fuera de los juegos.</p>
+                        <div class="cart-content-buttons">
+                            <button class="primary-button">IOS App Store</button>
+                            <button>Google Play</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Promotion Content -->
+    </main>
+    <!-- End Main Content -->
+
+   <!-- Bootstrap core JavaScript
+    ================================================== -->
+
+    <!-- Bootstrap JS -->
+    <script src="/public/js/bootstrap.js"></script>
+</body>
+</html>
