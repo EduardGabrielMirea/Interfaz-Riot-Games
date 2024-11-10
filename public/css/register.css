@@ -1,0 +1,163 @@
+/*------------------------------
+=BASIC SETUP
+------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/*------------------------------
+=BODY
+------------------------------*/
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+/*------------------------------
+=HEADER
+------------------------------*/
+header{
+    position: fixed;
+    width: 5%; /* Ajusta el ancho de la columna izquierda */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(70, 71, 70, 0.5); /* Fondo semitransparente */
+    backdrop-filter: blur(10px); /* Aplica el desenfoque de fondo */
+    padding: 5px;
+}
+
+/*------------------------------
+=MAIN
+------------------------------*/
+/*------------------------------
+=REGISTER
+------------------------------*/
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(51, 51, 158);
+
+}
+/*------------------------------
+=LOGIN
+------------------------------*/
+.login{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(10, 27, 90, 0.79); /* Fondo semitransparente para el recuadro */
+    color: #f7f2f2;
+}
+    .logo-img img{
+        max-width: 70%;
+        border-radius: 50%;
+    }
+/*------------------------------
+=LOGIN FORM
+------------------------------*/
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+    #username,#password{
+        color: #373636;
+    }
+.password-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+    .password-container i {
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+        color: #888; /* Color del icono */
+    }
+/*------------------------------
+=LOGIN SOCIAL
+------------------------------*/
+.login-social {
+    display: flex;
+    justify-content: center; /* Opcional: centra los elementos */
+}
+    .login-social ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 20px; /* Espacio entre los elementos */
+    }
+        .login-social ul li {
+            display: inline-flex;
+        }
+            .login-social a i{
+                color: #168126;
+            }
+/*------------------------------
+=LOGIN SESION
+------------------------------*/
+.login-sesion{
+    font-size: 18px;
+}
+#sesion-checkbox{
+appearance: none; /* Elimina el estilo predeterminado del checkbox */
+width: 18px;
+height: 18px;
+border: 1px solid #6e796e;  /* Borde de color */
+border-radius: 4px;         /* Bordes redondeados */
+position: relative;
+cursor: pointer;
+}
+    #sesion-checkbox:checked {
+        background-color: #f6f7f9;  /* Color de fondo cuando está seleccionado */
+        border-color: #168126;      /* Cambia el color del borde también */
+    }
+
+        #sesion-checkbox:checked::after {
+            content: '✔';               /* Añade un símbolo de verificación */
+            position: absolute;
+            top: -1px;
+            left: 3px;
+            font-size: 12px;
+            color: rgb(11, 11, 11);               /* Color de la marca de verificación */
+        }
+/*------------------------------
+=LOGIN ENTER
+------------------------------*/
+.login-enter button {
+    background: none;      /* Fondo transparente */
+    border: none;          /* Sin bordes */
+    padding: 0;            /* Sin espacio alrededor del icono */
+    cursor: pointer;       /* Cambia el cursor a mano para indicar que es clickeable */
+    font-size: 24px;       /* Ajusta el tamaño del icono */
+}
+
+.login-enter button i {
+    color: #168126;        /* Ajusta el color del icono si es necesario */
+}
+/*------------------------------
+=LOGIN CONTENT
+------------------------------*/
+.login-content{
+    min-width: 100%;
+    min-height: 100%;
+    /*padding-left: 300px;*/
+    background-image: url('https://wallpaperset.com/w/full/4/e/0/534864.jpg');
+    background-size: cover;           /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center;       /* Centra la imagen */
+    background-repeat: no-repeat;      /* Evita que la imagen se repita */
+}
