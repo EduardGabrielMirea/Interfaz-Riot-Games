@@ -30,101 +30,120 @@
 </head>
 
 <body>
-
-    <div class="flex-two-columns">
+    <!-- Start Header -->
+    <header>
         <!-- Start Navigation Bar -->
-         <div id="navbar-section"></div>
+        <nav>
+            <div class="logo">
+                <img src="/public/img/Logo-puno.png" alt="logo">
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="/templates/home.html"><i class="fa fa-home fa-2x"></i></a></li>
+                    <li><a href="/templates/misjuegos.html"><i class="fa fa-th-large fa-2x"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="/templates/valorant.html"><img src="/public/img/logo-valorant.png" alt="logo-valorant"></a></li>
+                    <li><a href="/templates/leagueoflegends.html"><img src="/public/img/logo-league-of-legends.png" alt="logo-league-of-legends"></a></li>
+                    <li><a href="/templates/tft.html"><img src="/public/img/logo-tft.png" alt="logo-tft"></a></li>
+                    <li><a href="/templates/runaterra.html"><img src="/public/img/logo-runa-terra.png" alt="logo-runa-terra"></a></li>
+                </ul>
+            </div>
+        </nav>
         <!-- End Navigation Bar -->
+    </header>
+    <!-- End Header -->
 
-        <!-- Start Main Content -->
-        <main class="right-column">
-            <!-- Start Carousel -->
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <h2>Novedades</h2>
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <!-- Video de YouTube en lugar de la primera imagen -->
-                        <iframe class="first-slide" src="https://www.youtube.com/embed/rhTZTy1rZhw"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="item">
-                        <!-- Video de YouTube en lugar de la segunda imagen -->
-                        <iframe class="second-slide" src="https://www.youtube.com/embed/3dAb0HADFYU"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="item">
-                        <!-- Video de YouTube en lugar de la segunda imagen -->
-                        <iframe class="second-slide" src="https://www.youtube.com/embed/J_TQK480XDk"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
+    <!-- Start Main Content -->
+    <main class="right-column">
+        <!-- Start Carousel -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <h2>Novedades</h2>
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <!-- Video de YouTube en lugar de la primera imagen -->
+                    <iframe class="first-slide" src="https://www.youtube.com/embed/rhTZTy1rZhw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
                 </div>
-                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="fa fa-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                    <span class="fa fa-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="item">
+                    <!-- Video de YouTube en lugar de la segunda imagen -->
+                    <iframe class="second-slide" src="https://www.youtube.com/embed/3dAb0HADFYU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="item">
+                    <!-- Video de YouTube en lugar de la segunda imagen -->
+                    <iframe class="second-slide" src="https://www.youtube.com/embed/J_TQK480XDk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
             </div>
-            <!-- End Carousel -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- End Carousel -->
 
-            <!-- Start Promotion Content -->
-            <div class="content-list">
-                <h2>Promociones</h2>
-                <div class="cart-list">
-                    <div class="cart">
-                        <div class="cart-header">
-                            <img src="/public/img/promocion1.jpg" alt="promotion">
-                        </div>
-                        <div class="cart-content">
-                            <h3>Sácale más partido a los títulos de Riot games con Xbox Game Pass.</h3>
-                            <p>Riot Games se une a Xbox para llevar nuestros títulos más importantes a Game Pass. Los
-                                miembros de Game Pass pueden vincular sus perfiles de Xbox para desbloquear recompensas
-                                prémium y beneficios exclusivos.</p>
-                            <div class="cart-content-buttons">
-                                <button class="primary-button">Vincular mi perfil de Xbox</button>
-                                <button>Más información</button>
-                            </div>
-                        </div>
+        <!-- Start Promotion Content -->
+        <div class="content-list">
+            <h2>Promociones</h2>
+            <div class="cart-list">
+                <div class="cart">
+                    <div class="cart-header">
+                        <img src="/public/img/promocion1.jpg" alt="promotion">
                     </div>
-
-                    <div class="cart">
-                        <div class="cart-header">
-                            <img src="/public/img/promocion-riot-mobile.jpg" alt="promotion">
-                        </div>
-                        <div class="cart-content">
-                            <h3>Riot Mobile</h3>
-                            <p>Riot Mobile ayuda a que los jugadores descubran nuevo contenido, se mantengan informados
-                                a cerda de todos nuestros títulos y eventos, y pueden conectar con otros jugadores de
-                                Riot fuera de los juegos.</p>
-                            <div class="cart-content-buttons">
-                                <button class="primary-button">IOS App Store</button>
-                                <button>Google Play</button>
-                            </div>
+                    <div class="cart-content">
+                        <h3>Sácale más partido a los títulos de Riot games con Xbox Game Pass.</h3>
+                        <p>Riot Games se une a Xbox para llevar nuestros títulos más importantes a Game Pass. Los
+                            miembros de Game Pass pueden vincular sus perfiles de Xbox para desbloquear recompensas
+                            prémium y beneficios exclusivos.</p>
+                        <div class="cart-content-buttons">
+                            <button class="primary-button">Vincular mi perfil de Xbox</button>
+                            <button>Más información</button>
                         </div>
                     </div>
                 </div>
+
+                <div class="cart">
+                    <div class="cart-header">
+                        <img src="/public/img/promocion-riot-mobile.jpg" alt="promotion">
+                    </div>
+                    <div class="cart-content">
+                        <h3>Riot Mobile</h3>
+                        <p>Riot Mobile ayuda a que los jugadores descubran nuevo contenido, se mantengan informados
+                            a cerda de todos nuestros títulos y eventos, y pueden conectar con otros jugadores de
+                            Riot fuera de los juegos.</p>
+                        <div class="cart-content-buttons">
+                            <button class="primary-button">IOS App Store</button>
+                            <button>Google Play</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- End Promotion Content -->
-        </main>
-        <!-- End Main Content -->
-    </div>
+        </div>
+        <!-- End Promotion Content -->
+    </main>
+    <!-- End Main Content -->
 
 
     <!-- Bootstrap core JavaScript

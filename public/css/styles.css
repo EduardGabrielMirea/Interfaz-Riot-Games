@@ -13,17 +13,20 @@
 ------------------------------*/
 body{
     min-height: 100vh;
+    min-width: 100vw;
 }
+/*
 .flex-two-columns {
     display: flex;
     flex-direction: row;
     min-height: 100vh;
 }
+*/
 
 /*------------------------------
 =HEADER
 ------------------------------*/
-.left-column {
+header{
     position: fixed;
     width: 5%; /* Ajusta el ancho de la columna izquierda */
     height: 100vh;
@@ -34,9 +37,88 @@ body{
     backdrop-filter: blur(10px); /* Aplica el desenfoque de fondo */
     padding: 5px;
 }
+
+/*
+.left-column {
+    position: fixed;
+    width: 5%;  Ajusta el ancho de la columna izquierda 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(70, 71, 70, 0.5);  Fondo semitransparente 
+    backdrop-filter: blur(10px); /* Aplica el desenfoque de fondo 
+    padding: 5px;
+}
         .left-column .logo img {
             max-width: 100%;
         }
+*/
+/*------------------------------
+=NAVIGATION BAR
+------------------------------*/  
+header .logo img {
+    max-width: 100%;
+}  
+header .navbar{
+    margin-top: 30px; /* Empuja la barra de navegación hacia abajo */
+    margin-bottom: 30px;
+    align-items: center;
+}
+        header .navbar ul li {
+            list-style-type: none;
+            margin-top: 10px; /* Empuja la barra de navegación hacia abajo */
+            margin-bottom: 10px;
+            position: relative; /* Necesario para posicionar el punto rojo */
+        }
+            header .navbar ul li a {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                border-radius: 10px;
+            }
+                header .navbar ul li a i {
+                   color:#373636;
+                }
+                    header .navbar ul li a img {
+                    max-width: 70%;
+                    text-decoration: none;
+                    }
+            /* Estilos para el ícono cuando el elemento está activo */
+                header .navbar ul li a.active {
+                background-color: rgba(255, 253, 253, 0.79); /* Fondo semitransparente para el recuadro */
+                border-radius: 8px;
+                padding: 12px; /* Espaciado extra alrededor del ícono */
+            }
+            
+            /* Punto rojo a la izquierda del elemento activo */
+            header .navbar ul li a.active::before {
+                content: "";
+                position: absolute;
+                left: -10px; /* Ajusta según el espaciado que necesites */
+                top: 50%;
+                transform: translateY(-50%);
+                width: 8px;
+                height: 8px;
+                background-color: red;
+                border-radius: 50%;
+            }
+/*------------------------------
+=MAIN
+------------------------------*/
+.right-column{
+    padding-left: 150px;
+    background-color: #6b6b6c;
+    min-width: 100%;
+    min-height: 100%;
+}
+    .right-column h2 {
+        font-size: 40px;
+        margin: 20px;
+        color: #fff;
+    }  
 /*------------------------------
 =REGISTER
 ------------------------------*/
@@ -164,70 +246,8 @@ cursor: pointer;
     background-position: center;       /* Centra la imagen */
     background-repeat: no-repeat;      /* Evita que la imagen se repita */
 }
-/*------------------------------
-=NAVIGATION BAR
-------------------------------*/    
-    .left-column .navbar{
-        margin-top: 30px; /* Empuja la barra de navegación hacia abajo */
-        margin-bottom: 30px;
-        align-items: center;
-    }
-            .left-column .navbar ul li {
-                list-style-type: none;
-                margin-top: 10px; /* Empuja la barra de navegación hacia abajo */
-                margin-bottom: 10px;
-                position: relative; /* Necesario para posicionar el punto rojo */
-            }
 
-                .left-column .navbar ul li a {
-                    text-decoration: none;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    padding: 10px;
-                    border-radius: 10px;
-                }
-                    .left-column .navbar ul li a i {
-                       color:#373636;
-                    }
-                    .left-column .navbar ul li a img {
-                        max-width: 70%;
-                        text-decoration: none;
-                    }
-                
-                /* Estilos para el ícono cuando el elemento está activo */
-                .left-column .navbar ul li a.active {
-                    background-color: rgba(255, 253, 253, 0.79); /* Fondo semitransparente para el recuadro */
-                    border-radius: 8px;
-                    padding: 12px; /* Espaciado extra alrededor del ícono */
-                }
-                
-                /* Punto rojo a la izquierda del elemento activo */
-                .left-column .navbar ul li a.active::before {
-                    content: "";
-                    position: absolute;
-                    left: -10px; /* Ajusta según el espaciado que necesites */
-                    top: 50%;
-                    transform: translateY(-50%);
-                    width: 8px;
-                    height: 8px;
-                    background-color: red;
-                    border-radius: 50%;
-                }
-/*------------------------------
-=MAIN
-------------------------------*/
-.right-column{
-    padding-left: 150px;
-    background-color: #6b6b6c;
-    min-width: 100%;
-    min-height: 100%;
-}
-    .right-column h2 {
-        font-size: 40px;
-        margin: 20px;
-        color: #fff;
-    }
+
 /*------------------------------
 =CAROUSEL
 ------------------------------*/
