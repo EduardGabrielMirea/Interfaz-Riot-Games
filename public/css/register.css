@@ -17,8 +17,13 @@ body{
     align-items: center;
     min-height: 100vh;
     min-width: 100vw;
-    background-color: rgba(21, 23, 28, 0.79); /* Fondo semitransparente para el recuadro */
     text-align: center;
+    background-image: url('https://www.underconsideration.com/brandnew/archives/riot_games_logo_before_after.png');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 /*------------------------------
 =REGISTER
@@ -27,14 +32,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(51, 51, 158);
+    background-color: rgba(21, 23, 28, 0.79); /* Fondo semitransparente para el recuadro */
     max-width:max-content;
-
+    
 }
-    .logo-img img{
-        max-width: 70%;
-        border-radius: 50%;
-    }
+.logo-img img{
+    max-width: 70%;
+    border-radius: 50%;
+}
 /*------------------------------
 =REGISTER FORM
 ------------------------------*/
@@ -46,20 +51,20 @@ body{
     gap: 10px;
     margin-bottom: 10px;
 }
-    #username,#password{
-        color: #373636;
-    }
+#username,#password{
+    color: #373636;
+}
 .password-container{
     position: relative;
     display: flex;
     align-items: center;
 }
-    .password-container i {
-        position: absolute;
-        right: 10px;
-        cursor: pointer;
-        color: #888; /* Color del icono */
-    }
+.password-container i {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #888; /* Color del icono */
+}
 /*------------------------------
 =LOGIN ENTER
 ------------------------------*/
