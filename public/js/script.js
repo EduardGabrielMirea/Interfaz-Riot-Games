@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded",function () {
 
     // Comprobar el From y redireccionar al home.html. Hay que hacer cuando le des enter que funcione también (Hecho por mi)
     const loginButton = document.getElementById("login-button");
-    const homeHtml = 'home.html';
+    const homeHtml = '/templates/home/index.html';
     const xhr = new XMLHttpRequest();
     loginButton.addEventListener("click", function(event){
         event.preventDefault();
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded",function () {
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
                 // Si la autenticación es exitosa, redirigir a home.html
-                window.location.href = "home.html";
+                window.location.href = "/templates/home/index.html";
                 } else {
                     // Manejar el error de autenticación (opcional)
                     alert("Error de autenticación. Por favor verifica tus datos.");
