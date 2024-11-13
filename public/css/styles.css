@@ -42,10 +42,27 @@ body{
 ------------------------------*/
 .register {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    text-align: center;
+    background-image: url('https://www.underconsideration.com/brandnew/archives/riot_games_logo_before_after.png');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.register-contenedor{
+    display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(51, 51, 158);
-
+    max-width: max-content;
+    padding: 20px;
+    background-color: rgba(21, 23, 28, 0.79); /* Fondo semitransparente para el recuadro */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0,);
 }
 /*------------------------------
 =LOGIN
@@ -61,6 +78,9 @@ body{
     background-color: rgba(10, 27, 90, 0.79); /* Fondo semitransparente para el recuadro */
     color: #f7f2f2;
 }
+    .login-contenedor{
+        margin-top: 150px;
+    }
     .logo-img img{
         max-width: 70%;
         border-radius: 50%;
@@ -268,6 +288,9 @@ cursor: pointer;
         justify-content:space-around;
     }
         .cart{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             text-align: center;
             margin: 10px;
             border-radius: 20px;

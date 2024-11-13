@@ -26,27 +26,29 @@
 
     <!-- Custom JS -->
     <script src="/public/js/script.js"></script>
+    <script src="/public/js/register.js"></script>
 </head>
 
 <body>
     <!-- Start Header -->
     <div class="register">
-        <div class="logo-img">
-            <img src="/public/img/logo-punch-name.png" alt="Logo Riot Games whit name">
-        </div>
-        <form class="login-form" action="" method="get">
-            <input type="text" id="username" name="username" autocomplete="username" placeholder="User Name">
-            <div class="password-container">
-                <input type="password" id="password" name="password" autocomplete="current-password"
-                    placeholder="Password">
-                <i id="toggle-password" class="fa fa-eye" aria-hidden="true"></i>
+        <div class="register-contenedor">
+
+            <div class="logo-img">
+                <img src="/public/img/logo-punch-name.png" alt="Logo Riot Games whit name">
             </div>
-        </form>
-        <div class="login-register">
-            <a href="/"></a>
-        </div>
-        <div class="login-enter">
-            <button type="submit" id="login-button"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+            <form class="login-form" action="" method="get">
+                <input type="text" id="username" name="username" autocomplete="username" placeholder="User Name">
+                <div class="password-container">
+                    <input type="password" id="password" name="password" autocomplete="current-password"
+                        placeholder="Password">
+                    <i id="toggle-password" class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+            </form>
+            <div class="login-enter">
+                <button type="submit" id="register-button"><i class="fa fa-arrow-circle-right"
+                        aria-hidden="true"></i></button>
+            </div>
         </div>
     </div>
     <!-- End Header -->
