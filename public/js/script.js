@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded",function () {
         });
     }); // Carga el contenido del archivo
 
+    /*   
     // Pausar el video cuando se cambia de diapositiva (no hecho por mi)
     $('#myCarousel').on('slide.bs.carousel', function () {
         var activeSlide = $(this).find('.item.active iframe')[0];
@@ -21,6 +22,5 @@ document.addEventListener("DOMContentLoaded",function () {
             activeSlide.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
         }
     });
-
-
+    */ 
 });
