@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded",function () {
   
-    //Cargar Partial de navegación (no hecho por mi)
+    //Cargar Partial de navegación
     $("#navbar-section").load("/templates/partials/_navigation.html", function () {
         //(Hecho por mi)
         document.querySelectorAll('.navbar a').forEach(link => {
