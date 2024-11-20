@@ -259,7 +259,25 @@ cursor: pointer;
 .right-column-client-valorant{
     min-width: 100%;
     min-height: 100%;
-    background-image: url('https://static.toiimg.com/thumb/msid-112060282,width-1280,height-720,resizemode-4/112060282.jpg');
+    background-image: url('https://w0.peakpx.com/wallpaper/28/428/HD-wallpaper-jett-valorant-fps-game-jett-riot-riotbrasil-riotgames-valorant-valorantbrasil-wiwferr.jpg');
+    background-size: cover;           /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center;       /* Centra la imagen */
+    background-repeat: no-repeat;      /* Evita que la imagen se repita */
+}
+
+.right-column-client-tft{
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url('https://i.pinimg.com/736x/c7/40/2d/c7402d4847bc54b6ce554a854873bf98.jpg');
+    background-size: cover;           /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center;       /* Centra la imagen */
+    background-repeat: no-repeat;      /* Evita que la imagen se repita */
+}
+
+.right-column-client-runaterra{
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url('https://www.overclockzone.com/_admin/covercontent/5478-1626339631.png');
     background-size: cover;           /* Ajusta la imagen para cubrir todo el fondo */
     background-position: center;       /* Centra la imagen */
     background-repeat: no-repeat;      /* Evita que la imagen se repita */
